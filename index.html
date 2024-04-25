@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <link rel="icon" href="./images/favicon.ico" sizes="any" />
-    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
     <meta name="color-scheme" content="light dark" />
     <script src="./scripts/set-theme.js"></script>
@@ -44,7 +44,38 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <ul class="main__content-list" role="list">
+        <li>
+          <article class="main__content-article">
+            <h2 class="main__article-header">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+            <section class="main__content-image">
+              <img
+                src="./images/image.png"
+                srcset="
+                  ./images/image.png    1x,
+                  ./images/image-2x.png 2x,
+                  ./images/image-3x.png 3x
+                "
+                alt="Автодом, готовый к путешествию"
+              />
+              <span class="main__content-image_watermark">&lt;HTML&gt;</span>
+            </section>
+            <section>
+              <p>
+                Это было самое начало пути. На этом этапе важно было
+                проникнуться основами и настроиться на учёбу. И, возможно,
+                подумать, как новые знания могут повлиять на ваше будущее.
+              </p>
+              <p>Место для ваших воспоминаний о начале обучения.</p>
+              <div><button>Like</button></div>
+            </section>
+          </article>
+        </li>
+      </ul>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

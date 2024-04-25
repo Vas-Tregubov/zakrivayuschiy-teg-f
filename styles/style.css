@@ -14,6 +14,8 @@
 
 */
 
+/* COMMON STYLES  */
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -21,4 +23,59 @@
   font-weight: var(--main-font-paragraph-weight);
   background-color: var(--background-color);
   color: var(--accent-color);
+  background-image: var(--bg-image);
+  background-size: cover;
+  display: grid;
+  justify-content: center;
 }
+
+/* HEADER  */
+
+.header {
+
+}
+
+/* BODY  */
+
+.main {
+  width: var(--main-content-width);
+  display: grid;
+  gap: var(--main-content-gap);
+}
+
+.main__content-list {
+  list-style: none;
+}
+
+.main__content-article {
+  width: 100%;
+}
+
+.main__article-header {
+  font-family: var(--main-font);
+  font-weight: var(--main-font-headers-weight);
+}
+
+.main__content-image {
+  position: relative;
+}
+
+.main__content-image_watermark {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+}
+
+.main__content-article-text {
+  display: ;
+}
+
+@media (width <= 375px) {
+  .main {
+    width: 100%;
+  }
+}
+
+/* FOOTER  */
