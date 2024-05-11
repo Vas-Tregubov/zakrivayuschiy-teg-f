@@ -6,41 +6,45 @@
 */
 
 :root.theme-light {
-  --main-font-paragraph-weight: "wght" 400;
-  --main-font-headers-weight: "wght" 700;
+  --main-font-paragraph-weight: 400;
+  --main-font-headers-weight: 700;
   --background-color: rgba(255, 255, 255, 1);
   --accent-color: rgba(0, 0, 0, 1);
   --bg-image: repeating-linear-gradient(#d3d3d3, transparent 2px),
     repeating-linear-gradient(90deg, #e7e7e7, #1a1a1a 2px);
+  --watermark-shadow: rgba(255, 255, 255, 1);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --main-font-paragraph-weight: "wght" 400;
-    --main-font-headers-weight: "wght" 700;
+    --main-font-paragraph-weight: 400;
+    --main-font-headers-weight: 700;
     --background-color: rgba(255, 255, 255, 1);
     --accent-color: rgba(0, 0, 0, 1);
     --bg-image: repeating-linear-gradient(#d3d3d3, transparent 2px),
       repeating-linear-gradient(90deg, #e7e7e7, #1a1a1a 2px);
+    --watermark-shadow: rgba(255, 255, 255, 1);
   }
 }
 
 :root.theme-dark {
-  --main-font-paragraph-weight: "wght" 465;
-  --main-font-headers-weight: "wght" 785;
+  --main-font-paragraph-weight: 465;
+  --main-font-headers-weight: 785;
   --background-color: rgba(0, 0, 0, 1);
   --accent-color: rgba(0, 204, 20, 1);
   --bg-image: repeating-linear-gradient(#000, transparent 2px),
     repeating-linear-gradient(90deg, #007f0c, #004306 2px);
+  --watermark-shadow: rgba(0, 0, 0, 1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-font-paragraph-weight: "wght" 465;
-    --main-font-headers-weight: "wght" 785;
+    --main-font-paragraph-weight: 465;
+    --main-font-headers-weight: 785;
     --background-color: rgba(0, 0, 0, 1);
     --accent-color: rgba(0, 204, 20, 1);
     --bg-image: repeating-linear-gradient(#000, transparent 2px),
       repeating-linear-gradient(90deg, #007f0c, #004306 2px);
+    --watermark-shadow: rgba(0, 0, 0, 1);
   }
 }
