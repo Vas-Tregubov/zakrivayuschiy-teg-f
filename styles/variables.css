@@ -8,6 +8,5 @@
   --bg-image: repeating-linear-gradient(#d3d3d3, transparent 2px),
     repeating-linear-gradient(90deg, #e7e7e7, #1a1a1a 2px);
   --watermark-shadow: rgba(255, 255, 255, 1);
-  --main-content-width: 700px;
   --main-content-gap: 52px;
 }
