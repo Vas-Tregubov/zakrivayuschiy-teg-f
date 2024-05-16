@@ -32,6 +32,15 @@
   gap: 52px;
 }
 
+/* .button:focus {
+  outline: none;
+} */
+
+.button:focus {
+  box-shadow: 2px 2px 0 var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
 /* HEADER  */
 
 .header {
@@ -74,20 +83,49 @@
   gap: 14px;
 }
 
-.theme-menu__item {
-}
-
 .theme-menu__button {
   background-color: transparent;
   border: none;
+  position: relative;
+  padding-block-end: 2px;
+  text-transform: uppercase;
+}
+
+.theme-menu__button::after {
+  position: absolute;
+  content: "";
+  left: 4px;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
 }
 
 .theme-menu__button:disabled {
-  opacity: 60%;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
+  animation: arrow-animation 0.5s infinite ease-in-out alternate;
 }
 
 @media (width <= 375px) {
@@ -158,7 +196,6 @@
   background-color: var(--background-color);
   display: grid;
   gap: 27px;
-  
 }
 
 .card__like-section {
@@ -172,10 +209,14 @@
   border: none;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
 .card__like-button {
   min-width: 130px;
   outline: 2px solid currentColor;
-  padding: 9px, 17px, 9px, 17px;
+  /* padding: 9px, 17px, 9px, 17px; */
   font-family: var(--accent-font);
   font-weight: 400;
   font-size: 14px;
@@ -183,6 +224,10 @@
   background-color: transparent;
   border: none;
 }
+
+/* .card__like-button:focus {
+  outline: none;
+} */
 
 /* FOOTER  */
 
@@ -203,6 +248,7 @@
   justify-content: center;
   gap: 8px;
   border: none;
+  background-color: var(--background-color);
 }
 
 .footer__button_icon {
@@ -218,5 +264,15 @@
   .footer__button_icon {
     inline-size: 28px;
     block-size: 28px;
+  }
+}
+
+@keyframes arrow-animation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(4px);
   }
 }
