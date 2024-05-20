@@ -58,7 +58,7 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: increase 0.3s 1 ease-in alternate 0.1s;
+  animation: increase 0.3s ease-in 0.1s 1 alternate;
 }
 
 .sparks {
@@ -66,16 +66,16 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks 0.3s 1 ease-in alternate 0.3s;
+  animation: sparks 0.3s ease-in 0.3s 1 alternate;
 }
 
 @keyframes arrow-animation {
   from {
-    transform: translateX(0);
+    transform: translateX(2px);
   }
 
   to {
-    transform: translateX(4px);
+    transform: translateX(6px);
   }
 }
 
