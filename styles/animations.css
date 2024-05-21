@@ -59,6 +59,7 @@
 
 .like-icon.is-liked .heart {
   animation: increase 0.3s ease-in 0.1s 1 alternate;
+  transform-origin: 50% 50%;
 }
 
 .sparks {
