@@ -19,7 +19,7 @@
   <body class="page">
     <header class="header">
       <div class="header__title-block">
-        <p class="header__subject">&lt;/HTML&gt;</p>
+        <a class="header__subject">&lt;/HTML&gt;</a>
         <h1 class="header__title">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
@@ -76,8 +76,9 @@
               </p>
               <p>Место для ваших воспоминаний о начале обучения.</p>
               <div class="card__like-section">
-                <button class="card__icon-button">
+                <button type="button" class="card__icon-button">
                   <svg
+                    aria-hidden="true"
                     class="like-icon"
                     width="39"
                     height="36"
@@ -109,7 +110,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button button">
+                <button type="button" class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -145,8 +146,9 @@
               </p>
               <p>Место для ваших воспоминаний о начале первого спринта.</p>
               <div class="card__like-section">
-                <button class="card__icon-button">
+                <button type="button" class="card__icon-button">
                   <svg
+                    aria-hidden="true"
                     class="like-icon"
                     width="39"
                     height="36"
@@ -178,7 +180,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button button">
+                <button type="button" class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -211,8 +213,9 @@
               </p>
               <p>Место для ваших воспоминаний об окончании первого спринта.</p>
               <div class="card__like-section">
-                <button class="card__icon-button">
+                <button type="button" class="card__icon-button">
                   <svg
+                    aria-hidden="true"
                     class="like-icon"
                     width="39"
                     height="36"
@@ -244,7 +247,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button button">
+                <button type="button" class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -279,8 +282,9 @@
               </p>
               <p>Место для ваших воспоминаний о начале второго спринта.</p>
               <div class="card__like-section">
-                <button class="card__icon-button">
+                <button type="button" class="card__icon-button">
                   <svg
+                    aria-hidden="true"
                     class="like-icon"
                     width="39"
                     height="36"
@@ -312,7 +316,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button button">
+                <button type="button" class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -348,8 +352,9 @@
               </p>
               <p>Место для ваших воспоминаний об окончании второго спринта.</p>
               <div class="card__like-section">
-                <button class="card__icon-button">
+                <button type="button" class="card__icon-button">
                   <svg
+                    aria-hidden="true"
                     class="like-icon"
                     width="39"
                     height="36"
@@ -381,7 +386,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button button">
+                <button type="button" class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -414,8 +419,9 @@
               </p>
               <p>Место для ваших воспоминаний о начале третьего спринта.</p>
               <div class="card__like-section">
-                <button class="card__icon-button">
+                <button type="button" class="card__icon-button">
                   <svg
+                    aria-hidden="true"
                     class="like-icon"
                     width="39"
                     height="36"
@@ -447,7 +453,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button button">
+                <button type="button" class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -482,8 +488,9 @@
               </p>
               <p>Место для ваших воспоминаний об окончании третьего спринта.</p>
               <div class="card__like-section">
-                <button class="card__icon-button">
+                <button type="button" class="card__icon-button">
                   <svg
+                    aria-hidden="true"
                     class="like-icon"
                     width="39"
                     height="36"
@@ -515,7 +522,7 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button button">
+                <button type="button" class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
@@ -554,8 +561,9 @@
                 чувствуете в этой точке пути.
               </p>
               <div class="card__like-section">
-                <button class="card__icon-button">
+                <button type="button" class="card__icon-button">
                   <svg
+                    aria-hidden="true"
                     class="like-icon"
                     width="39"
                     height="36"
@@ -587,29 +595,33 @@
                     />
                   </svg>
                 </button>
-                <button class="card__like-button button">
+                <button type="button" class="card__like-button button">
                   <span class="button__text">Like</span>
                 </button>
               </div>
             </section>
           </article>
         </li>
+        <li>
+          <article>
+            <button
+              class="main__save_button button"
+              type="button"
+              aria-controls="dialogWindow"
+              onclick="window.dialogWindow.showModal()"
+            >
+              <svg
+                viewbox="0 0 40 40"
+                class="floppy__icon main__save_button-icon"
+              >
+                <use href="./svg/floppy.svg#floppy" />
+              </svg>
+              <span class="button__text">Сохранить на память</span>
+            </button>
+          </article>
+        </li>
       </ul>
     </main>
-    <footer class="footer">
-      <button
-        class="footer__button button"
-        type="button"
-        aria-controls="dialogWindow"
-        onclick="window.dialogWindow.showModal()"
-      >
-        <svg viewbox="0 0 40 40" class="floppy__icon footer__button_icon">
-          <use href="./svg/floppy.svg#floppy" />
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </footer>
-    <script src="./scripts/like.js"></script>
     <dialog class="dialog" id="dialogWindow">
       <div class="dialog__text-area">
         <svg viewbox="0 0 40 40" class="floppy__icon dialog__button_icon">
@@ -625,5 +637,6 @@
         <span class="button__text">ok</span>
       </button>
     </dialog>
+    <script src="./scripts/like.js"></script>
   </body>
 </html>
