@@ -21,12 +21,13 @@
   min-block-size: 100dvb;
   max-inline-size: 700px;
   font-family: var(--main-font);
-  font-variation-settings: 'wght' var(--main-font-paragraph-weight);
+  font-variation-settings: "wght" var(--main-font-paragraph-weight);
   background-color: var(--background-color);
   color: var(--accent-color);
   background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -94,11 +95,10 @@ button:hover:before {
   inset: 0;
   inline-size: clamp(341px, 24.81%, 357px);
   background-color: var(--background-color);
-  padding: 30px;
+  padding: 30px 32px 0 32px;
   transition: opacity 0.3s ease-in-out;
   outline: 2px solid var(--accent-color);
   border: none;
-  max-block-size: 191px;
 }
 
 .dialog:not([open]) {
@@ -117,7 +117,7 @@ button:hover:before {
 }
 
 .dialog::backdrop {
-  background-color: rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .dialog__text {
@@ -152,7 +152,7 @@ button:hover:before {
 
 @media (width <= 375px) {
   .dialog {
-    padding: 30px 42px;
+    padding: 30px 42px 0 42px;
   }
 }
 
@@ -170,13 +170,12 @@ button:hover:before {
   margin-block-end: 50px;
   border: 2px solid var(--accent-color);
   inline-size: 100%;
-  /* min-block-size: 368px; */
   gap: 20px;
 }
 
 .header__title-block {
   display: grid;
-  gap: 20px;
+  gap: 24px;
   justify-content: center;
 }
 
@@ -200,8 +199,8 @@ button:hover:before {
   flex-direction: column;
   gap: 12px;
   font-size: 14px;
-  margin-inline-start: 45px;
-  margin-block-start: 10px;
+  margin-inline-start: 20px;
+  margin-block-start: 3px;
   max-block-size: 70px;
 }
 
@@ -210,19 +209,19 @@ button:hover:before {
   border: none;
   position: relative;
   text-transform: uppercase;
-  /* transition: transform 0.3s ease;
-  transition: opacity 0.3s ease; */
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button::after {
   position: absolute;
   content: "";
-  left: 0;
+  left: 4px;
   bottom: -3px;
   block-size: 2px;
   inline-size: 100%;
   background: currentColor;
   transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus {
@@ -234,26 +233,24 @@ button:hover:before {
 }
 
 .theme-menu__button:focus-visible::after {
-  transform: scaleX(1);
+  transform: scaleX(0.9);
   transform-origin: 0 0;
-  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: opacity 0.3s ease;
   cursor: pointer;
 }
 
 .theme-menu__button:disabled {
   opacity: 0.6;
-  transition: opacity 0.3s ease;
   pointer-events: none;
-  transform: translateX(-27px);
 }
 
 .theme-menu__button:disabled::before {
   content: "▶";
+  position: absolute;
+  left: -16px;
   display: inline-block;
   animation: arrow-animation 0.5s infinite ease-in-out alternate;
 }
@@ -285,14 +282,14 @@ button:hover:before {
   background-color: var(--background-color);
   font-size: 18px;
   line-height: 1.21;
-  font-variation-settings: 'wght' var(--main-font-headers-weight);
-  padding: 3px 10px;
-  min-block-size: 31px;
+  font-variation-settings: "wght" var(--main-font-headers-weight);
+  padding: 7px 12px;
+  margin-block-end: -1px;
 }
 
 .card__image-section {
   position: relative;
-  outline: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color);
   line-height: 0;
 }
 
@@ -304,7 +301,7 @@ button:hover:before {
 
 .card__watermark {
   position: absolute;
-  top: 35px;
+  top: 30px;
   right: 25px;
   font-family: var(--accent-font);
   font-size: 14px;
@@ -335,8 +332,8 @@ button:hover:before {
 }
 
 .card__text {
-  font-variation-settings: 'wght' var(--main-font-paragraph-weight);
-  padding: 25px;
+  font-variation-settings: "wght" var(--main-font-paragraph-weight);
+  padding: 20px 27px;
   background-color: var(--background-color);
   display: grid;
   gap: 27px;
@@ -347,8 +344,7 @@ button:hover:before {
 .card__like-section {
   display: flex;
   justify-content: flex-end;
-  gap: 5px;
-  max-block-size: 31px;
+  gap: 2px;
   margin-block-end: 7px;
 }
 

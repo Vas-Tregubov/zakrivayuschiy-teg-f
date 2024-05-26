@@ -76,11 +76,11 @@
 
 @keyframes arrow-animation {
   from {
-    transform: translateX(2px);
+    transform: translateX(0px);
   }
 
   to {
-    transform: translateX(6px);
+    transform: translateX(4px);
   }
 }
 

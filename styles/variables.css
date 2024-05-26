@@ -6,8 +6,8 @@
   --background-color: rgba(255, 255, 255, 1);
   --accent-color: rgba(0, 0, 0, 1);
   --btn-text-color: rgba(255, 255, 255, 1);
-  --bg-image: repeating-linear-gradient(#d3d3d3, transparent 2px),
-    repeating-linear-gradient(90deg, #e7e7e7, #1a1a1a 2px);
+  --bg-image: repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(90deg, #e7e7e7 0 2px, #1a1a1a 2px 4px);
   --watermark-shadow: rgba(255, 255, 255, 1);
   --main-content-gap: 52px;
   --like-icon-contour-color: rgba(0, 0, 0, 1);
